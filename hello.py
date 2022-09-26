@@ -13,18 +13,10 @@ app.config["SECRET_KEY"] = 'noonewillguessthis'
 bootstrap = Bootstrap(app)
 moment = Moment(app)
 
-def validate_email(form, email):
-    email_str = str(email.data)
-    if email_str == '': return
-    email_domain = email_str[email_str.find('@'):]
-    if "utoronto" not in email_domain:
-        raise StopValidation(email.gettext("Input a utoronto email address"))
-
 class NameAndEmailForm(FlaskForm):
     name = StringField('What is your name?', validators=[DataRequired()])
-    email = EmailField('What is your UofT email address?', validators=[DataRequired(), validate_email])
+    email = EmailField('What is your UofT email address?', validators=[DataRequired()])
     submit = SubmitField('Submit')
-
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
