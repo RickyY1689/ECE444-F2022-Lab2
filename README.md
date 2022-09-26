@@ -10,6 +10,10 @@ Activity 1 - Installation
 
 Activity 2 - Hello World & Hello User
 
-![image-20220925202505417](README.assets/image-20220925202505417.png)
+<img src="README.assets/image-20220925202505417.png" alt="image-20220925202505417" style="zoom:50%;" />
 
-![image-20220925202452961](README.assets/image-20220925202452961.png)
+<img src="README.assets/image-20220925202452961.png" alt="image-20220925202452961" style="zoom:50%;" />
+
+Activity 3
+
+<img src="README.assets/image-20220925205948063.png" alt="image-20220925205948063" style="zoom:50%;" />
